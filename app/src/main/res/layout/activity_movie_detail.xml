@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:id="@+id/img_photo_dtl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_photo_dtl"
+            android:layout_toRightOf="@id/img_photo_dtl"
+            android:text="@string/movie_title"
+            android:id="@+id/tv_title_dtl"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_photo_dtl"
+            android:layout_below="@id/tv_title_dtl"
+            android:layout_marginStart="20dp">
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_photo_dtl"
+                    android:layout_below="@id/tv_title_dtl"
+                    android:text="@string/release_date_label"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tv_release_date_label_dtl"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_release_date_dtl"
+                    android:text="@string/release_date"
+                    android:layout_toEndOf="@id/tv_release_date_label_dtl"
+                    android:layout_below="@id/tv_title_dtl"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_photo_dtl"
+                    android:layout_below="@id/tv_release_date_label_dtl"
+                    android:text="@string/duration_label"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/tv_duration_label_dtl"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_duration_dtl"
+                    android:text="@string/duration"
+                    android:layout_toEndOf="@id/tv_duration_label_dtl"
+                    android:layout_below="@id/tv_release_date_dtl"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_photo_dtl"
+                    android:layout_below="@id/tv_duration_label_dtl"
+                    android:text="@string/genre_label"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/tv_genre_label_dtl"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_genre_dtl"
+                    android:text="@string/genre"
+                    android:layout_toEndOf="@id/tv_duration_label_dtl"
+                    android:layout_below="@id/tv_release_date_dtl"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_synopsis_label_dtl"
+            android:text="@string/synopsis_label"
+            android:layout_below="@id/img_photo_dtl"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_synopsis_dtl"
+            android:text="@string/synopsis"
+            android:layout_below="@id/tv_synopsis_label_dtl"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
